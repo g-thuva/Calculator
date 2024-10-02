@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <input type="text" id="display">
+        <div class="btn">
+            <button class="C-btn" onclick="clearDisplay()">C</button>
+            <div class="btn-wrap">
+                <button onclick="displayValue(7)" class="C-btn">7</button>
+                <button onclick="displayValue(8)" class="C-btn">8</button>
+                <button onclick="displayValue(9)" class="C-btn">9</button>
+                <button onclick="displayValue('/')" class="C-btn">/</button>
+            </div>
+            <div class="btn-wrap">
+                <button onclick="displayValue(4)" class="C-btn">4</button>
+                <button onclick="displayValue(5)" class="C-btn">5</button>
+                <button onclick="displayValue(6)" class="C-btn">6</button>
+                <button onclick="displayValue('*')" class="C-btn">*</button>
+            </div>
+            <div class="btn-wrap">
+                <button onclick="displayValue(1)" class="C-btn">1</button>
+                <button onclick="displayValue(2)" class="C-btn">2</button>
+                <button onclick="displayValue(3)" class="C-btn">3</button>
+                <button onclick="displayValue('-')" class="C-btn">-</button>
+            </div>
+            <div class="btn-wrap">
+                <button onclick="displayValue('.')" class="C-btn">.</button>
+                <button onclick="displayValue(0)" class="C-btn">0</button>
+                <button onclick="displayValue('+')" class="C-btn">+</button>
+                <button onclick="calculate('=')" class="C-btn">=</button>
+            </div>
+        </div>
+
+    </div>
     
 </body>
+<script src="script.js"></script>
 </html>
